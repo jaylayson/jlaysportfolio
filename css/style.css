@@ -11,7 +11,7 @@
 }
 
 .fade-in{
-  animation: fadeInLeft 0.5s;
+  animation: fadeInLeft 1.5s;
 }
 
 html{
@@ -20,10 +20,9 @@ html{
 
 body {
   font-family: 'Roboto';
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
       color: #D3D3D3; /* WHITE-ISH TEXT */
 
 }
@@ -92,9 +91,11 @@ img {
 .timeline-item {
   padding: 25px 10px;
   position: relative;
+  left: 20px;
   color: rgba(0, 0, 0, 0.7);
   border-left: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .timeline-item p {
   text-align: left;
 }
