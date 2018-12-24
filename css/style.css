@@ -1,0 +1,129 @@
+@keyframes fadeInLeft {
+  0%{
+    opacity: 0;
+    transform:translateX(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform:translateX(0);
+  }
+
+}
+
+.fade-in{
+  animation: fadeInLeft 0.5s;
+}
+
+html{
+  /*background-color: grey; */
+}
+
+body {
+  font-family: 'Roboto';
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+      color: #D3D3D3; /* WHITE-ISH TEXT */
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+}
+
+ul li:first-child {
+  font-size: 40px;
+  float: left;
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+li {
+  font-size: 15px;
+  display: inline;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+li a:hover{
+  text-shadow: 1px 1px 1px grey;
+}
+a {
+    color: #383838; /* GREY */
+  text-decoration: none;
+}
+
+h1, h3, h4, h5, h6{
+  text-align: center;
+  font-family: 'Oswald';
+  color: #c63939; /* RED*/
+}
+
+h2 {
+  text-align: left;
+  font-family: 'Oswald';
+  font-size: 20px;
+  color: #c63939; /* RED*/
+}
+
+p{
+  text-align: center;
+  color: #383838; /* GREY */
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 400px;
+}
+
+
+.timeline-item {
+  padding: 25px 10px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+.timeline-item p {
+  text-align: left;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: .785rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+}
