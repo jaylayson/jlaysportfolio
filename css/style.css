@@ -79,7 +79,10 @@ h3 {
   color: #c63939; /* RED*/
 }
 
-
+.para p{
+  text-align: left;
+  font-family: "Roboto";
+}
 p{
   text-align: center;
   color: #383838; /* GREY */
