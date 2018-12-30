@@ -21,9 +21,10 @@ html{
 body {
   font-family: 'Roboto';
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-      color: #D3D3D3; /* WHITE-ISH TEXT */
+  padding-left: 150px;
+  padding-right: 150px;
+  /*color: #D3D3D3;*/ /* WHITE-ISH*/
+  background-color: #383838;
 
 }
 
@@ -55,7 +56,8 @@ li a:hover{
   text-shadow: 1px 1px 1px grey;
 }
 a {
-    color: #383838; /* GREY */
+  color: #D3D3D3;
+    /*color: #383838;*/ /* GREY */
   text-decoration: none;
 }
 
@@ -66,27 +68,31 @@ h1, h4, h5, h6{
 }
 
 h2 {
+  margin: 0;
   text-align: left;
   font-family: 'Oswald';
   font-size: 20px;
+  font-weight: 400;
   color: #c63939; /* RED*/
 }
 
 h3 {
+  margin: 0;
   text-align: left;
   font-family: 'Oswald';
   font-size: 15px;
+  font-weight: 300;
   color: #c63939; /* RED*/
 }
 
 .para p{
   text-align: left;
-  color: green;
   font-family: "Roboto";
 }
 p{
   text-align: center;
-  color: #383838; /* GREY */
+  color: #D3D3D3;
+  /*color: #383838;*/ /* GREY */
 }
 
 img {
